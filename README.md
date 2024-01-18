@@ -6,4 +6,4 @@ The Transcontinental Android SDK is an easy way to interact with the Transcontin
 
 ## Documentation 
 
-Refer to the [Documentation]() for instructions on how to integrate the SDK into your app.
+Refer to the [Documentation](https://transcontinentalsdk.github.io/transcontinental-sdk-android/) for instructions on how to integrate the SDK into your app.
