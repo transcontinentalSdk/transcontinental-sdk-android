@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DigitalFlyer SDK</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="index.html">
+                            DigitalFlyer SDK
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":digitalflyer:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" id="content" pageIds="DigitalFlyer SDK::////PointingToDeclaration//857017594">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Digital</span><wbr></wbr><span><span>Flyer</span></span> <span><span>SDK</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><h2 class=""> Installation</h2><p class="paragraph">Add the <code class="lang-kotlin">TCDigitalFlyer</code> as a gradle dependency in your project:</p><div class="sample-container"><pre><code class="block lang-groovy" theme="idea">dependencies {<br>    implementation 'com.github.transcontinentalSdk:sdk-android-internal:1.9.9'<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> Initializing the SDK</h2><p class="paragraph">To retrieve your flyers, you will need the Transcontinental subscription key for your account. This key will be provided when registering your application with Transcontinental. The SDK uses this key internally to communicate with the Web API.</p><p class="paragraph">Before using any APIs, initialize the SDK with your subscription key and client name:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">import com.tctranscontinental.android.digitalflyer.DigitalFlyer<br><br>val digitalFlyer = DigitalFlyer(<br>    subscriptionKey = subscriptionKey,<br>    client = client,<br>    banner = banner,<br>    environment = environment<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">subscriptionKey</code> - You receive this key when you register your application with Transcontinental</p></li><li><p class="paragraph"><code class="lang-kotlin">client</code> - The client’s name, as provided by Transcontinental</p></li><li><p class="paragraph"><code class="lang-kotlin">banner</code> - An optional banner, as provided by Transcontinental (defaults to the value provided to client)</p></li><li><p class="paragraph"><code class="lang-kotlin">environment</code> - The API Environment (defaults to live)</p></li></ul><p class="paragraph">While it’s technically possible to instantiate multiple DigitalFlyer objects with the same inputs on-demand, it’s recommended to use a single instance throughout your application (e.g. a reference in your Application class).</p><p class="paragraph">Instantiating multiple DigitalFlyer objects with different inputs is not currently supported. It will result in undefined behavior.</p><h2 class=""> Listing Available Publications</h2><p class="paragraph">The DigitalFlyer SDK provides a simple and efficient way to retrieve digital flyers using the <code class="lang-kotlin">listPublications(storeId): List&lt;Publication.Attributes&gt;</code> function. Upon successful retrieval, a list of <code class="lang-kotlin">Publication.Attributes</code> objects will be returned. In case of failure, a <code class="lang-kotlin">NoFlyersFoundException</code> will be thrown.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val publications = digitalFlyer.listPublications(<br>    storeId = storeId,<br>    language = language,<br>    date = date<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">storeId</code> - The store’s identifier</p></li><li><p class="paragraph"><code class="lang-kotlin">language</code> - The Publication’s display Language (an enum defaulting to <code class="lang-kotlin">Language.ENGLISH</code>)</p></li><li><p class="paragraph"><code class="lang-kotlin">date</code> - The date to search for available Publications (defaults to today)</p></li></ul><h2 class=""> Retrieving a Publication</h2><p class="paragraph">Once you have a list of <code class="lang-kotlin">Publication.Attributes</code> objects, you can retrieve a <code class="lang-kotlin">Publication</code> object using the <code class="lang-kotlin">getPublication(attributes: Publication.Attributes, orientation: Int): Publication</code> function.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val publication = digitalFlyer.getPublication(<br>    attributes = attributes, <br>    orientation = FlyerLayout.VERTICAL<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><ul><li><p class="paragraph"><code class="lang-kotlin">attributes</code> - The <code class="lang-kotlin">Publication.Attributes</code> object returned from <code class="lang-kotlin">listPublications(storeId): List&lt;Publication.Attributes&gt;</code></p></li><li><p class="paragraph"><code class="lang-kotlin">orientation</code> - The layout version of the publication, specified via consts <code class="lang-kotlin">FlyerLayout.VERTICAL</code> and <code class="lang-kotlin">FlyerLayout.HORIZONTAL</code> (defaults to <code class="lang-kotlin">FlyerLayout.VERTICAL</code>). Use this flag to cater to phones or tablets.</p></li></ul><h2 class=""> Rendering a Publication</h2><p class="paragraph">The publication can be rendered with 2 options: Compose view or legacy XML view. </p><h3 class=""> Compose</h3><p class="paragraph">The <code class="lang-kotlin">FlyerView</code> is a custom view that serves as the entry point for displaying the digital flyer. It accepts the publication to display, along with a configuration object that governs its visual and functional behavior. To use the compose version, simply invoke the composable <code class="lang-kotlin">FlyerView()</code> function and pass a publication to it. </p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">override fun onCreate(savedInstanceState: Bundle?) {<br>    super.onCreate(savedInstanceState)<br>//  ...    <br>    setContent {<br>        FlyerView(publication)<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h3 class=""> XML</h3><p class="paragraph">For the legacy XML variant, add <code class="lang-kotlin">&lt;FlyerListView&gt;</code> to your layout file:</p><div class="sample-container"><pre><code class="block lang-xml" theme="idea">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br>&lt;!-- activity_flyer_view.xml --&gt;<br>&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;<br>    android:layout_width=&quot;match_parent&quot;<br>    android:layout_height=&quot;match_parent&quot;&gt;<br>    <br>    &lt;com.tctranscontinental.android.digitalflyer.FlyerListView<br>        android:id=&quot;@+id/flyer_list_view&quot;<br>        android:layout_width=&quot;match_parent&quot;<br>        android:layout_height=&quot;match_parent&quot; /&gt;<br><br>&lt;/FrameLayout&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">or use it as a root element for your activity/fragment:</p><div class="sample-container"><pre><code class="block lang-xml" theme="idea">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br>&lt;!-- activity_flyer_view.xml --&gt;<br>&lt;com.tctranscontinental.android.digitalflyer.FlyerListView<br>    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;<br>    android:id=&quot;@+id/flyer_list_view&quot;<br>    android:layout_width=&quot;match_parent&quot;<br>    android:layout_height=&quot;match_parent&quot; /&gt;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">and pass a publication to it via <code class="lang-kotlin">FlyerListView.setActivePublication()</code>:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">import com.tctranscontinental.android.digitalflyer.FlyerListView<br><br>override fun onCreate(savedInstanceState: Bundle?) {<br>    super.onCreate(savedInstanceState)<br>//  ...    <br>    val flyerView: FlyerListView = findViewById(R.id.flyer_list_view)<br>    flyerView.setActivePublication(publication)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Alternatively, everything can be added dynamically via code (skipping xml):</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">import com.tctranscontinental.android.digitalflyer.FlyerListView<br><br>override fun onCreate(savedInstanceState: Bundle?) {<br>    super.onCreate(savedInstanceState)<br>//  ...    <br>    val flyerView = FlyerListView(this)<br>    setContentView(flyerView)<br>    <br>    flyerView.setActivePublication(publication)<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="1891100836%2FPackages%2F857017594" anchor-label="com.tctranscontinental.android.digitalflyer" id="1891100836%2FPackages%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-digital-flyer -s-d-k/com.tctranscontinental.android.digitalflyer/index.html">com.tctranscontinental.android.digitalflyer</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1891100836%2FPackages%2F857017594"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1402086702%2FPackages%2F857017594" anchor-label="com.tctranscontinental.android.digitalflyer.domain" id="-1402086702%2FPackages%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-digital-flyer -s-d-k/com.tctranscontinental.android.digitalflyer.domain/index.html">com.tctranscontinental.android.digitalflyer.domain</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1402086702%2FPackages%2F857017594"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1710122658%2FPackages%2F857017594" anchor-label="com.tctranscontinental.android.digitalflyer.ui" id="1710122658%2FPackages%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+    <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="-digital-flyer -s-d-k/com.tctranscontinental.android.digitalflyer.ui/index.html">com.tctranscontinental.android.digitalflyer.ui</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1710122658%2FPackages%2F857017594"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">androidJvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
