@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.0.0] - 2024-03-21
 
 The v2.0.0 update introduces substantial performance improvements for the SDK, driven by several optimizations and technical enhancements:
 
