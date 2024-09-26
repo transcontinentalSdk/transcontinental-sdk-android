@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.1] - 2024-09-19
+
+### Changed
+
+- Updated Compose BOM to `2024.05.00`
+- Updated other dependencies in response to Compose BOM updates
+
+### Fixed
+
+- Fixed several search bar/search text state inconsistencies
+- Fixed in-block video/audio mismatch on stopping video
+
 ## [2.1.0] - 2024-08-16
 
 The v2.1.0 release introduces several new features and improvements to the SDK, bringing it closer to parity with the TC Web SDK:
