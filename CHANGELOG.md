@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.1.2] - 2024-10-22
+
+### Added
+
+- Added an indicator when the flyer is loaded for the first time
+
+### Changed
+
+- Masthead and search bar can be enabled/disabled using `FlyerStyle`
+- Updated state preservation to reduce flyer reloads
+
+### Fixed
+
+- Aligned search result ordering with iOS
+- Horizontal flyer height should match screen height
+- Video blocks sometimes have incorrect aspect ratios
+
 ## [2.1.1] - 2024-09-19
 
 ### Changed
