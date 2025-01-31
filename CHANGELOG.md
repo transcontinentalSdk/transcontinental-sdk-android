@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.0] - 2025-01-31
+
+### Fixed
+
+- Basebar sizing should be consistent for Kiosks
+- Reduced time of black view before video play
+- Searching static guidebooks renders similarly to the web flyer
+
 ## [2.1.2] - 2024-10-22
 
 ### Added
