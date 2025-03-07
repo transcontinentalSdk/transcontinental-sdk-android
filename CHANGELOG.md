@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1] - 2025-03-07
+
+### Changed
+
+- Exposed two (previously internal) `Publication.Attributes` variables
+- Updated Compose BOM to `2024.12.01`
+
 ## [2.2.0] - 2025-01-31
 
 ### Fixed
