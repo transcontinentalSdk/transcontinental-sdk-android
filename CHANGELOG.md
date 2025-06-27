@@ -1,6 +1,16 @@
 # Changelog
 
-## [2.3.1] - 2025-05-30
+## [2.x] - Unreleased
+
+## [2.3.2] - 2025-06-27
+
+### Fixed
+
+- Banner ads are excluded from `mobileUrl` fallback
+- Disclaimers larger that 2 lines are collapsed and expanded on demand
+- Fixed screen flickering during UI testing
+
+## [2.3.1] - 2025-05-28
 
 ### Added
 
@@ -8,7 +18,7 @@
 
 ### Fixed
 
-- Fixed white-space bug in search text
+- Fixed search white-space trim bug
 
 ## [2.3.0] - 2025-04-02
 
