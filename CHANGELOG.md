@@ -2,6 +2,12 @@
 
 ## [2.x] - Unreleased
 
+## [2.4.1] - 2025-08-29
+
+### Changed
+
+- Ensured `Attributes` class is `Parcelable`
+
 ## [2.4.0] - 2025-07-29
 
 ### Added
