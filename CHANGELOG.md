@@ -2,6 +2,12 @@
 
 ## [2.x] - Unreleased
 
+## [2.4.2] - 2025-09-30
+
+### Added
+
+- Page indicator can be disabled via the `FlyerStyle` theme
+
 ## [2.4.1] - 2025-08-29
 
 ### Changed
