@@ -2,6 +2,21 @@
 
 ## [2.x] - Unreleased
 
+## [2.4.3] - 2025-10-31
+
+### Added
+
+- Legal pages are collapsible on phones (collapsed by default)
+
+### Changed
+
+- "Cancel" button removed from the Search Bar
+- Filters can be cleared with the associated "x"
+
+### Fixed
+
+- In-block video play button not showing immediately after video finished
+
 ## [2.4.2] - 2025-09-30
 
 ### Added
