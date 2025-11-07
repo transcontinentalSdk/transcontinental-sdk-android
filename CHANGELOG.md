@@ -1,6 +1,23 @@
 # Changelog
 
-## [2.x] - Unreleased
+## [3.x] - Unreleased
+
+## [3.0.0] - 2025-11-07
+
+This release may include a breaking change. Please refer to the [migration documentation](https://transcontinentalsdk.github.io/transcontinental-sdk-android/) for more information.
+
+### Added
+
+- Added support for arbitrarily-sized page grids
+- Improved rendering performance on larger, or more detailed, flyers
+
+### Changed
+
+- `Flyer.Event` signature includes a (default empty) dictionary
+
+### Fixed
+
+- Category filter selection checkmark UI sometimes did not persist between interactions
 
 ## [2.4.3] - 2025-10-31
 
