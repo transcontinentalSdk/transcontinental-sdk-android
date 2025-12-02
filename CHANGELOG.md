@@ -2,6 +2,17 @@
 
 ## [3.x] - Unreleased
 
+## [3.0.1] - 2025-12-01
+
+### Changed
+
+- Categories are retrieved from the same API as the Web SDK
+
+### Fixed
+
+- Handled timeout crashes on slow networks
+- Fixed static guidebook search layout regression
+
 ## [3.0.0] - 2025-11-07
 
 This release may include a breaking change. Please refer to the [migration documentation](https://transcontinentalsdk.github.io/transcontinental-sdk-android/) for more information.
