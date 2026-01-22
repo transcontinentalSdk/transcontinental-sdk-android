@@ -2,6 +2,12 @@
 
 ## [3.x] - Unreleased
 
+## [3.0.2] - 2026-01-21
+
+### Fixed
+
+- Fixed occasional race condition crash on large, video-heavy flyers
+
 ## [3.0.1] - 2025-12-01
 
 ### Changed
