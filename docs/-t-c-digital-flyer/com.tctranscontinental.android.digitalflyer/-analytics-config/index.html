@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AnalyticsConfig</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            TCDigitalFlyer
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":digitalflyer:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="TCDigitalFlyer::com.tctranscontinental.android.digitalflyer/AnalyticsConfig///PointingToDeclaration//857017594">
+  <div class="breadcrumbs"><a href="../../../index.html">TCDigitalFlyer</a><span class="delimiter">/</span><a href="../index.html">com.tctranscontinental.android.digitalflyer</a><span class="delimiter">/</span><span class="current">AnalyticsConfig</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Analytics</span><wbr></wbr><span><span>Config</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AnalyticsConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">upload<span class="token operator">: </span><a href="-upload-config/index.html">AnalyticsConfig.UploadConfig</a><span class="token operator"> = </span>UploadConfig()<span class="token punctuation">, </span></span><span class="parameter ">storage<span class="token operator">: </span><a href="-storage-config/index.html">AnalyticsConfig.StorageConfig</a><span class="token operator"> = </span>StorageConfig()</span></span><span class="token punctuation">)</span></div><p class="paragraph">Configuration object for the Analytics subsystem.</p><p class="paragraph">If this object is not provided to the <code class="lang-kotlin">`DigitalFlyer`</code>, the analytics subsystem will not initialize because it requires a non-empty <code class="lang-kotlin">id</code>. The value of the non-empty <code class="lang-kotlin">id</code> is chosen by the caller, depending on their requirements/usage/privacy policies.</p><p class="paragraph">A non-exhaustive list of candidate IDs are below:</p><p class="paragraph">DigitalFlyer-lifetime ID (i.e. <code class="lang-kotlin">init(id: UUID().uuidString)</code>): Ephemeral; tracks analytics for user until <code class="lang-kotlin">`DigitalFlyer`</code> is re-created App session ID (i.e. a cached <code class="lang-kotlin">UUID().uuidString</code>): Tracks analytics for user until next launch of the app Vendor ID (i.e.<code class="lang-kotlin">identifierForVendor</code>): Tracks analytics for user until all vendor apps are uninstalled Advertising ID (i.e. <code class="lang-kotlin">advertisingIdentifier</code>): Tracks analytics until user resets ID. Requires App Tracking Transparency and user consent A logged in user's ID: Tracks analytics while user is authenticated with host App</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1036840217%2FConstructors%2F857017594" anchor-label="AnalyticsConfig" id="-1036840217%2FConstructors%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-analytics-config.html"><span>Analytics</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1036840217%2FConstructors%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">upload<span class="token operator">: </span><a href="-upload-config/index.html">AnalyticsConfig.UploadConfig</a><span class="token operator"> = </span>UploadConfig()<span class="token punctuation">, </span></span><span class="parameter ">storage<span class="token operator">: </span><a href="-storage-config/index.html">AnalyticsConfig.StorageConfig</a><span class="token operator"> = </span>StorageConfig()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1075388377%2FClasslikes%2F857017594" anchor-label="StorageConfig" id="-1075388377%2FClasslikes%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-storage-config/index.html"><span>Storage</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1075388377%2FClasslikes%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-storage-config/index.html">StorageConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventCapacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Configuration for event storage/buffering</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1821472869%2FClasslikes%2F857017594" anchor-label="UploadConfig" id="-1821472869%2FClasslikes%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-upload-config/index.html"><span>Upload</span><wbr></wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1821472869%2FClasslikes%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-upload-config/index.html">UploadConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pollInterval<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">uploadInterval<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">eventCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">50</span><span class="token punctuation">, </span></span><span class="parameter ">batchCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">50</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1987517294%2FProperties%2F857017594" anchor-label="id" id="1987517294%2FProperties%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1987517294%2FProperties%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-238758730%2FProperties%2F857017594" anchor-label="storage" id="-238758730%2FProperties%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="storage.html"><span><span>storage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-238758730%2FProperties%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="storage.html">storage</a><span class="token operator">: </span><a href="-storage-config/index.html">AnalyticsConfig.StorageConfig</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-241847480%2FProperties%2F857017594" anchor-label="upload" id="-241847480%2FProperties%2F857017594" data-filterable-set=":digitalflyer:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":digitalflyer:dokkaHtml/release" data-filterable-set=":digitalflyer:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="upload.html"><span><span>upload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-241847480%2FProperties%2F857017594"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":digitalflyer:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="upload.html">upload</a><span class="token operator">: </span><a href="-upload-config/index.html">AnalyticsConfig.UploadConfig</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

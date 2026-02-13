@@ -2,6 +2,16 @@
 
 ## [3.x] - Unreleased
 
+## [3.1.0] - 2026-02-12
+
+### Added
+
+- Added an opt-in Analytics subsystem
+
+### Changed
+
+- Images are scaled by aspect ratio for cases where the image and bounding box have differing aspect ratios
+
 ## [3.0.2] - 2026-01-21
 
 ### Fixed
