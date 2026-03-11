@@ -1,13 +1,13 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:com.tctranscontinental.android.digitalflyer.debug////PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/index.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext.Companion///PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/-companion/index.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext.Companion/shared/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/-companion/shared.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext///PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/index.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/blockTapHandler/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/block-tap-handler.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/orientation/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/orientation.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/publication/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/publication.html
-$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/reset/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[android-jvm]-debug-context/reset.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext.Companion///PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/-companion/index.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext.Companion/shared/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/-companion/shared.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext///PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/index.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/blockTapHandler/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/block-tap-handler.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/orientation/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/orientation.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/publication/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[release]-debug-context/publication.html
+$dokka.location:com.tctranscontinental.android.digitalflyer.debug/DebugContext/reset/#/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.debug/[debug]-debug-context/reset.html
 $dokka.location:com.tctranscontinental.android.digitalflyer.ui.theme////PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.ui.theme/index.html
 $dokka.location:com.tctranscontinental.android.digitalflyer.ui.theme//DigitalFlyerTheme/#kotlin.Boolean#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.ui.theme/-digital-flyer-theme.html
 $dokka.location:com.tctranscontinental.android.digitalflyer.ui.xml////PointingToDeclaration/-t-c-digital-flyer/com.tctranscontinental.android.digitalflyer.ui.xml/index.html
@@ -305,4 +305,3 @@ com.tctranscontinental.android.digitalflyer.debug
 com.tctranscontinental.android.digitalflyer.ui
 com.tctranscontinental.android.digitalflyer.ui.theme
 com.tctranscontinental.android.digitalflyer.ui.xml
-

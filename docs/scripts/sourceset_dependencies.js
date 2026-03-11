@@ -1,1 +1,1 @@
-sourceset_dependencies='{":digitalflyer:dokkaHtml/debug":[],":digitalflyer:dokkaHtml/main":[],":digitalflyer:dokkaHtml/release":[]}'
+sourceset_dependencies='{":digitalflyer/debug":[],":digitalflyer/main":[],":digitalflyer/release":[]}'

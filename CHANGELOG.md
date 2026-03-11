@@ -2,6 +2,20 @@
 
 ## [3.x] - Unreleased
 
+## [3.2.0] - 2026-03-11
+
+### Added
+
+- Animated click regions support events
+
+### Changed
+
+- Updated internal dependencies
+
+### Fixed
+
+- Carousel blocks should no longer overlap
+
 ## [3.1.0] - 2026-02-12
 
 ### Added
