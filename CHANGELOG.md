@@ -2,6 +2,16 @@
 
 ## [3.x] - Unreleased
 
+## [3.3.0] - 2026-05-21
+
+### Added
+
+- Support for advanced filters, dynamically adjusted from the API
+
+### Removed
+
+- Removed legacy storage token from CDN requests
+
 ## [3.2.0] - 2026-03-11
 
 ### Added
